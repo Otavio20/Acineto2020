@@ -1,13 +1,6 @@
 #usr/bin/python
 import pandas as pd
-import re
-import numpy as np
-from io import StringIO
-import glob
-import os
-from functools import reduce
 
-###Count number of genes after blast filtering (higher e-value and identity thresholds)
 blast=glob.glob(os.path.join('*.csv'))
 lista=[]
 for f in blast:
